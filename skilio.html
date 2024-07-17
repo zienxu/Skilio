@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skilio Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        #chatbot-container {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Skilio</h1>
+    <p>Use the chatbot below to find out more information and onboard the programme.</p>
+    <div id="chatbot-container"></div>
+
+    <!-- Include the Web SDK JavaScript Library -->
+    <script src="path/to/web-sdk.js"></script>
+    <script>
+        // Initialize the chatbot
+        const chatbot = new Chatbot({
+            container: document.getElementById('chatbot-container'),
+            userId: 'unique-user-id',  // Replace with a unique user ID
+            company: 'Skilio'
+        });
+
+        chatbot.init();
+    </script>
+</body>
+</html>
