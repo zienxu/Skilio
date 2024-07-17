@@ -23,39 +23,16 @@
     <div id="chatbot-container"></div>
 
     <!-- Include the Web SDK JavaScript Library -->
-  
-      <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/0.1.0-beta.5/libs/oversea/index.js"></script>
-      <script>
-          new CozeWebSDK.WebChatClient({
-            config: {
-              bot_id: '7389644137974464519',
-            },
-            componentProps: {
-              title: 'Coze',
-            },
-          });
-      </script>
-    
-      <script>
-          new CozeWebSDK.WebChatClient({
-            config: {
-              bot_id: '7389644137974464519',
-            },
-            componentProps: {
-              title: 'Coze',
-            },
-          });
-      </script>
-    "></script>
+    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/0.1.0-beta.5/libs/oversea/index.js"></script>
     <script>
-        // Initialize the chatbot
-        const chatbot = new Chatbot({
-            container: document.getElementById('chatbot-container'),
-            userId: 'unique-user-id',  // Replace with a unique user ID
-            company: 'Skilio'
+        new CozeWebSDK.WebChatClient({
+            config: {
+                bot_id: '7389644137974464519',
+            },
+            componentProps: {
+                title: 'Coze',
+            },
         });
-
-        chatbot.init();
     </script>
 </body>
 </html>
